@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="css/formulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Nombre">
+            <form action="" name="formulario" method="get">
+            <label for="fname"> Nombre:</label>
+            <input type="text" id="fname" name="fname" required="Este campo es obligatorio ;D" placeholder="Introduce tu nombre" maxlength="15"> <br><br>
+            <label for="lname">Apellidos:</label>
+            <input type="text" id="lname" name="lname" required= "" placeholder="Introduce tus apellidos" maxlength="20" ><br><br>
+            <label for="lmail">Email:</label>
+            <input type="email" id="lmail" name="lmail" required= "" placeholder="Introduce tu correo" ><br><br>
+            <label for="lnum">Numero Telefono:</label>
+            <input type="tel" id="lnum" name="lnum" required= "" placeholder="+34 XXX XX XX" inputmode="tel" maxlength="11">
+            <br><br>
+            <label for="Contrasena">Contraseña:</label>
+            <input type="password" id="Contrasena" name="lnum" required= "" placeholder="password" required="" maxlength="11">
+            <br><br>
+            <label for="date">FECHA NACIMIENTO</label>
+            <input class="input" type="date" name="date" id="date">
+            <br><br>
+            <h2>SEXO</h2>
+            <br>
+            <input type="radio" id="html" name="fav_language" value="PROGRAMACION">
+            <label for="html">MASCULINO</label>
+            <input type="radio" id="css" name="fav_language" value="BASE DE DATOS">
+            <label for="css">FEMENINO</label>
+            <br><br>
+            <h2>TITULACIONES</h2>
+            <br>
+            <input list="browsers" name="browser" placeholder="SELECCIONE UNA">
+            <datalist id="browsers">
+              <option value="ESO">
+              <option value="BACHILLERATO">
+              <option value="FP">
+              <option value="CARRERA">
+              <option value="MASTER">
+            </datalist>
+            <br><br><br>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" value="Rango" min="14" required placeholder="Introduce tu edad">
+            <br><br>
+            <label for="URL">URL</label>
+            <input type="url" id="URL" name="URL"  placeholder="Introduce una URL">
+            <br><br>
+            <input type="checkbox" name="terminos" id="terminos"> Terminos y condiciones
+<br><br>
+<input type="submit" id="btn" name="btn" value = "Enviar">
+
+<script>
+  (function(){
+    var formulario = document.getElementById('formulario')[0],
+    elementos = formulario.elements,
+    boton = Document.getElementById('btn')
+
+  })
+</script>
+
+
+
+</form>
+</div>
+</body>
+</html>
